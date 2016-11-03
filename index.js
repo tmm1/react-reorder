@@ -115,7 +115,7 @@
         window.addEventListener('touchend', this.onMouseUp); // Touch up
         window.addEventListener('touchmove', this.onMouseMove); // Touch move
 
-        window.addEventListener('contextmenu', this.preventDefault);
+        //window.addEventListener('contextmenu', this.preventDefault);
       },
       onMouseUp: function (event) {
         if (event.type.indexOf('touch') >= 0 && !this.state.movedALittle) {
@@ -158,7 +158,7 @@
         window.removeEventListener('touchend', this.onMouseUp); // Touch up
         window.removeEventListener('touchmove', this.onMouseMove); // Touch move
 
-        window.removeEventListener('contextmenu', this.preventDefault);
+        //window.removeEventListener('contextmenu', this.preventDefault);
       },
       getScrollArea: function (value) {
         return Math.max(Math.min(value / 4, this.constants.SCROLL_AREA), this.constants.SCROLL_AREA / 5);
